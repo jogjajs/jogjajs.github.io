@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>JogjaJS</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-size: 1.9rem;
+            color: white;
+            background-image: url('batik-parang.png');
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            flex-direction: column;
+        }
+        div {
+            margin: 10px 0;
+            padding: 8px 12px;
+        }
+        .logo {
+            font-size: 4.8rem;
+            background: black;
+        }
+        .description {
+            background: rgba(0, 0, 0, 0.75);
+        }
+        a, a:link, a:visited {
+            text-decoration: none;
+            padding: 4px 8px;
+            color: white;
+            background: black;
+        }
+        a:hover {
+            color: black;
+            background: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>JogjaJS</h1>
+    <div class="container">
+        <div class="logo">
+            JogjaJS
+        </div>
+        <div class="description">
+            JogjaJS is an open source and JavaScript focused community based in Jogjakarta, Indonesia.
+        </div>
+        <div>
+            <a href="https://www.facebook.com/groups/257473611116032/">Discussion</a>
+            <a href="https://www.facebook.com/groups/1675298779418239/events/">Events</a>
+        </div>
+    </div>
 </body>
 </html>
