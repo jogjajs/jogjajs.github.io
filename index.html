@@ -11,14 +11,16 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="JogjaJS">
     <meta name="twitter:description" content="JogjaJS is an open source and JavaScript focused community based in Jogjakarta, Indonesia.">
-    <meta name="twitter:image" content="http://jogja.js.org/opengraph-icon.png">
+    <meta name="twitter:image" content="https://jogja.js.org/opengraph-icon.png">
 
     <meta property="og:title" content="JogjaJS">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://jogja.js.org">
-    <meta property="og:image" content="http://jogja.js.org/opengraph-icon.png">
+    <meta property="og:url" content="https://jogja.js.org">
+    <meta property="og:image" content="https://jogja.js.org/opengraph-icon.png">
     <meta property="og:description" content="JogjaJS is an open source and JavaScript focused community based in Jogjakarta, Indonesia.">
     <meta property="og:site_name" content="JogjaJS">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 
     <style>
         html {
@@ -26,9 +28,8 @@
         }
         body {
             font-size: 1.9rem;
-            color: white;
-            background-image: url('batik-parang.png');
-            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #333333;
+            font-family: 'Montserrat', sans-serif;
         }
         .container {
             display: flex;
@@ -37,40 +38,35 @@
             height: 80vh;
             flex-direction: column;
         }
+        .description {
+            font-weight: 300;
+        }
         div {
             margin: 10px 0;
             padding: 8px 12px;
         }
-        .logo {
-            font-size: 4.8rem;
-            background: black;
-        }
-        .description {
-            background: rgba(0, 0, 0, 0.75);
-        }
         a, a:link, a:visited {
             text-decoration: none;
-            padding: 4px 8px;
-            color: white;
-            background: black;
+            padding: 4px 20px;
+            color: #fcfcfc;
+            background: #dc4441;
+            border-radius: 2px;
         }
         a:hover {
-            color: black;
-            background: white;
+            background: #c73c39;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            JogjaJS
+        <div style="width: 400px;">
+            <img src="jogjajs-logo.svg" alt="JogjaJS logo">
         </div>
         <div class="description">
-            JogjaJS is an open source and JavaScript focused community based in Jogjakarta, Indonesia.
+            JavaScript community in Jogjakarta, Indonesia.
         </div>
         <div>
-            <a href="https://www.facebook.com/groups/257473611116032/">Discussion</a>
-            <a href="https://www.facebook.com/groups/1675298779418239/events/">Events</a>
+            <a href="https://www.facebook.com/jogjajs">JOIN</a>
         </div>
     </div>
 </body>
