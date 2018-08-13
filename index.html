@@ -31,11 +31,13 @@
             color: #333333;
             font-family: 'Montserrat', sans-serif;
         }
+        .main {
+            height: 100vh;
+        }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
             flex-direction: column;
         }
         .description {
@@ -45,14 +47,16 @@
             margin: 10px 0;
             padding: 8px 12px;
         }
-        a, a:link, a:visited {
+        a.button,
+        a:link.a.button,
+        a:visited.button {
             text-decoration: none;
             padding: 4px 20px;
             color: #fcfcfc;
             background: #dc4441;
             border-radius: 2px;
         }
-        a:hover {
+        a.button:hover {
             background: #c73c39;
         }
         .img-fluid {
@@ -61,7 +65,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="main container">
         <div style="width: 400px;">
             <img src="jogjajs-logo.svg" alt="JogjaJS logo">
         </div>
@@ -69,11 +73,13 @@
             JavaScript community in Jogjakarta, Indonesia.
         </div>
         <div>
-            <a href="https://www.facebook.com/jogjajs">Facebook Group</a>
-            <a href="https://t.me/jogjajs">Telegram</a>
+            <a class="button" href="https://www.facebook.com/jogjajs">Facebook Group</a>
+            <a class="button" href="https://t.me/jogjajs">Telegram</a>
+            <a class="button" href="#events">Events</a>
         </div>
     </div>
-    <div style="margin: auto; width: 800px;">
+    <div class="container">
+        <h2><a name="events" style="color: #999;">#</a>Events</h2>
         <a href="https://bit.ly/jogjaJS13">
             <img src="images/jogjajs-poster-13.jpg" alt="JogjaJS 13" class="img-fluid">
         </a>
