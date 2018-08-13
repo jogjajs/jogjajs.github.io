@@ -20,11 +20,13 @@
     <meta property="og:description" content="JogjaJS is an open source and JavaScript focused community based in Jogjakarta, Indonesia.">
     <meta property="og:site_name" content="JogjaJS">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
 
     <style>
         html {
-            font-size: 62.5%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
         body {
             font-size: 1.9rem;
@@ -34,52 +36,36 @@
         .main {
             height: 100vh;
         }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
         .description {
             font-weight: 300;
+            font-size: 22px;
         }
-        div {
-            margin: 10px 0;
-            padding: 8px 12px;
-        }
-        a.button,
-        a:link.a.button,
-        a:visited.button {
-            text-decoration: none;
-            padding: 4px 20px;
-            color: #fcfcfc;
-            background: #dc4441;
-            border-radius: 2px;
-        }
-        a.button:hover {
-            background: #c73c39;
-        }
-        .img-fluid {
-            max-width: 100%;
+        @media (min-width: 576px) {
+            .description {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="main container">
-        <div style="width: 400px;">
-            <img src="jogjajs-logo.svg" alt="JogjaJS logo">
-        </div>
-        <div class="description">
-            JavaScript community in Jogjakarta, Indonesia.
-        </div>
-        <div>
-            <a class="button" href="https://www.facebook.com/jogjajs">Facebook Group</a>
-            <a class="button" href="https://t.me/jogjajs">Telegram</a>
-            <a class="button" href="#events">Events</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-8 mt-5">
+                <img src="jogjajs-logo.svg" alt="JogjaJS logo" class="img-fluid">
+                <div class="description text-center">
+                    JavaScript community in Jogjakarta, Indonesia.
+                </div>
+                <div class="row align-items-center px-3 px-md-0 mt-5">
+                    <div class="col"><a class="btn btn-block btn-danger" href="https://www.facebook.com/jogjajs">Facebook Group</a></div>
+                    <div class="col"><a class="btn btn-block btn-danger" href="https://t.me/jogjajs">Telegram</a></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <h2><a name="events" style="color: #999;">#</a>Events</h2>
+
+    <div class="container pt-5 mt-5 text-center">
+        <h2 class="mb-5"><a name="events" style="color: #999;">#</a>Events</h2>
         <a href="https://bit.ly/jogjaJS13">
             <img src="images/jogjajs-poster-13.jpg" alt="JogjaJS 13" class="img-fluid">
         </a>
