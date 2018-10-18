@@ -31,7 +31,12 @@
         body {
             font-size: 1.9rem;
             color: #333333;
+            background: #dc4441;
             font-family: 'Montserrat', sans-serif;
+        }
+        .wrapper {
+            background: #fff;
+            margin-bottom: 60px;
         }
         .main {
             height: 100vh;
@@ -40,35 +45,48 @@
             font-weight: 300;
             font-size: 22px;
         }
-        @media (min-width: 576px) {
+        .footer {
+            color: #fff;
+            background: url('./images/jogjajs-footer.png') repeat-x 0 5px;
+            background-size: contain;
+            height: 30px;
+        }
+        @media (max-width: 576px) {
             .description {
                 font-size: 30px;
+            }
+            .footer {
+                background-size: cover;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-12 col-md-8 mt-5">
-                <img src="jogjajs-logo.svg" alt="JogjaJS logo" class="img-fluid">
-                <div class="description text-center">
-                    JavaScript community in Jogjakarta, Indonesia.
-                </div>
-                <div class="row align-items-center px-3 px-md-0 mt-5">
-                    <div class="col"><a class="btn btn-block btn-danger mb-2 mb-sm-0" href="https://www.facebook.com/jogjajs">Facebook Group</a></div>
-                    <div class="col"><a class="btn btn-block btn-danger" href="https://t.me/jogjajs">Telegram</a></div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-12 col-md-8 mt-5">
+                    <img src="jogjajs-logo.svg" alt="JogjaJS logo" class="img-fluid">
+                    <div class="description text-center">
+                        JavaScript community in Jogjakarta, Indonesia.
+                    </div>
+                    <div class="row align-items-center px-3 px-md-0 mt-5">
+                        <div class="col"><a class="btn btn-block btn-danger mb-2 mb-sm-0" href="https://www.facebook.com/jogjajs">Facebook Group</a></div>
+                        <div class="col"><a class="btn btn-block btn-danger" href="https://t.me/jogjajs">Telegram</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container pt-5 mt-5 text-center">
-        <h2 class="mb-5"><a name="events" style="color: #999;">#</a>Events</h2>
-        <a href="https://bit.ly/jogjaJS16">
-            <img src="images/jogjajs-poster-16.jpg" alt="JogjaJS 16" class="img-fluid">
-        </a>
+        <div class="container pt-5 mt-5 pb-5 text-center">
+            <h2 class="mb-5"><a name="events" style="color: #999;">#</a>Events</h2>
+            <a href="https://bit.ly/jogjaJS16">
+                <img src="images/jogjajs-poster-16.jpg" alt="JogjaJS 16" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="footer"></div>
     </div>
 </body>
 </html>
